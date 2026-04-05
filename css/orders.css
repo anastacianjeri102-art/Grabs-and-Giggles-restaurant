@@ -1,0 +1,315 @@
+/* ============================================
+   ORDERS PAGE CSS - COMPLETE
+   ============================================ */
+
+/* Statistics Mini Cards */
+.stats-mini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-mini-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #eef2f6;
+    transition: all 0.3s;
+}
+
+.stat-mini-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-mini-card i {
+    font-size: 2rem;
+}
+
+.stat-mini-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.stat-mini-card p {
+    font-size: 0.7rem;
+    color: #64748b;
+}
+
+.pending-stat i,
+.pending-stat h3 {
+    color: #f39c12;
+}
+
+.completed-stat i,
+.completed-stat h3 {
+    color: #27ae60;
+}
+
+.revenue-stat i,
+.revenue-stat h3 {
+    color: #ff6b35;
+}
+
+/* Table Actions Card */
+.table-actions-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #eef2f6;
+}
+
+.table-actions-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.table-actions-card h3 i {
+    color: #ff8c42;
+}
+
+.table-actions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.table-action {
+    background: #f8fafc;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid #e2e8f0;
+}
+
+.table-action strong {
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+.table-action form {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.table-action input {
+    width: 60px;
+    padding: 0.4rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.btn-pay, .btn-split {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-pay {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-pay:hover {
+    background: #229954;
+    transform: translateY(-2px);
+}
+
+.btn-split {
+    background: #3498db;
+    color: white;
+}
+
+.btn-split:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Orders Card */
+.recent-orders-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.2rem;
+    border: 1px solid #eef2f6;
+}
+
+.card-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #f0f2f5;
+}
+
+.card-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2c3e50;
+}
+
+.card-header h3 i {
+    color: #ff8c42;
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th {
+    text-align: left;
+    padding: 0.8rem;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.75rem;
+    border-bottom: 2px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+.orders-table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 0.85rem;
+    vertical-align: middle;
+}
+
+.orders-table tr:hover {
+    background: #fafbfd;
+}
+
+.order-id {
+    font-weight: 700;
+    color: #ff6b35;
+    font-family: monospace;
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-completed {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-pending {
+    background: #fff3e0;
+    color: #ed6c02;
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.complete-btn {
+    background: #27ae60;
+    color: white;
+}
+
+.complete-btn:hover {
+    background: #229954;
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+.completed-label {
+    color: #27ae60;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: #e8f5e9;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats-mini {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-actions-grid {
+        flex-direction: column;
+    }
+    
+    .table-action {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .orders-table th,
+    .orders-table td {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .actions {
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

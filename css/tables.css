@@ -1,0 +1,185 @@
+/* ============================================
+   TABLE MANAGEMENT CSS
+   ============================================ */
+
+.table-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat i {
+    font-size: 2rem;
+}
+
+.stat h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stat p {
+    font-size: 0.7rem;
+    color: #7f8c8d;
+}
+
+.stat.available i,
+.stat.available h3 {
+    color: #27ae60;
+}
+
+.stat.occupied i,
+.stat.occupied h3 {
+    color: #e74c3c;
+}
+
+.stat.reserved i,
+.stat.reserved h3 {
+    color: #f39c12;
+}
+
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.table-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.2rem;
+    text-align: center;
+    border: 2px solid #eef2f6;
+    transition: all 0.3s;
+}
+
+.table-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.table-card.available {
+    border-color: #27ae60;
+    background: #e8f5e9;
+}
+
+.table-card.occupied {
+    border-color: #e74c3c;
+    background: #ffebee;
+}
+
+.table-card.reserved {
+    border-color: #f39c12;
+    background: #fff3e0;
+}
+
+.table-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.table-capacity {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.table-status {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.status-available {
+    background: #27ae60;
+    color: white;
+}
+
+.status-occupied {
+    background: #e74c3c;
+    color: white;
+}
+
+.status-reserved {
+    background: #f39c12;
+    color: white;
+}
+
+.table-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn.occ {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn.occ:hover:not(:disabled) {
+    background: #c0392b;
+}
+
+.btn.res {
+    background: #f39c12;
+    color: white;
+}
+
+.btn.res:hover:not(:disabled) {
+    background: #e67e22;
+}
+
+.btn.avail {
+    background: #27ae60;
+    color: white;
+}
+
+.btn.avail:hover:not(:disabled) {
+    background: #229954;
+}
+
+@media (max-width: 768px) {
+    .table-stats {
+        grid-template-columns: 1fr;
+    }
+    .tables-grid {
+        grid-template-columns: 1fr;
+    }
+    .table-actions {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+}

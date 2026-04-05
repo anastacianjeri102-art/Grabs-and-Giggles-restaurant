@@ -1,0 +1,31 @@
+.customer-stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.stat-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.stat-card i { font-size: 2rem; color: #ff8c42; }
+.form-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.form-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
+.form-card input, .form-card button { padding: 0.6rem; border-radius: 8px; border: 1px solid #ddd; }
+.btn-primary { background: #ff8c42; color: white; border: none; cursor: pointer; }
+.customer-table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; }
+.customer-table th, .customer-table td { padding: 0.6rem; text-align: left; border-bottom: 1px solid #f0f2f5; font-size: 0.75rem; }
+.delete-btn { color: #e74c3c; text-decoration: none; }
+.search-box { display: flex; gap: 0.5rem; align-items: center; background: #f8fafc; padding: 0.3rem 0.8rem; border-radius: 30px; }
+.search-box input { border: none; background: transparent; outline: none; }
+@media (max-width: 768px) { .customer-stats { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }

@@ -1,0 +1,131 @@
+/* Staff Management Styles */
+.staff-stats {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 1.5rem;
+}
+.stat {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.stat i { font-size: 2rem; color: #ff8c42; }
+.stat h3 { font-size: 1.3rem; font-weight: 700; margin: 0; }
+
+.add-form {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.add-form h3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.add-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.add-form input, .add-form select {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+}
+.add-form button {
+    background: #ff8c42;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.staff-table {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.staff-table h3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.table-wrap { overflow-x: auto; }
+.staff-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.staff-list-table th {
+    text-align: left;
+    padding: 0.8rem 0.5rem;
+    background: #f8fafc;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #eef2f6;
+}
+.staff-list-table td {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 0.75rem;
+    vertical-align: middle;
+}
+.staff-id { font-weight: 700; color: #ff6b35; font-family: monospace; }
+.staff-name i { margin-right: 5px; color: #ff8c42; }
+.role {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    display: inline-block;
+}
+.role.admin { background: #ff8c4222; color: #ff6b35; }
+.role.waiter { background: #27ae6022; color: #229954; }
+.role.kitchen { background: #f39c1222; color: #e67e22; }
+.delete {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: #ffebee;
+    display: inline-block;
+}
+.delete:hover { background: #e74c3c; color: white; }
+.current {
+    color: #94a3b8;
+    font-size: 0.7rem;
+    background: #f8fafc;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.alert {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 0.6rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border-left: 3px solid #27ae60;
+}
+
+@media (max-width: 768px) {
+    .add-form form { flex-direction: column; }
+    .add-form input, .add-form select, .add-form button { width: 100%; }
+    .staff-list-table th, .staff-list-table td { padding: 0.5rem 0.3rem; font-size: 0.65rem; }
+}

@@ -1,0 +1,155 @@
+/* Inventory Stats */
+.inv-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat i {
+    font-size: 2rem;
+    color: #ff8c42;
+}
+
+.stat h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.stat p {
+    font-size: 0.7rem;
+    color: #7f8c8d;
+}
+
+/* Add Form */
+.add-form {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.add-form h3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.add-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.add-form input, .add-form select {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+    min-width: 100px;
+}
+
+.add-form button {
+    background: #ff8c42;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Inventory Table */
+.inv-table {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.inv-table h3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.6rem 0.4rem;
+    text-align: left;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 0.75rem;
+}
+
+th {
+    color: #64748b;
+    font-weight: 600;
+}
+
+tr.low {
+    background: #fff3e0;
+}
+
+.status {
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    display: inline-block;
+}
+
+.status.low {
+    background: #ffebee;
+    color: #e74c3c;
+}
+
+.status.ok {
+    background: #e8f5e9;
+    color: #27ae60;
+}
+
+.delete {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.delete:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .inv-stats {
+        grid-template-columns: 1fr;
+    }
+    .add-form form {
+        flex-direction: column;
+    }
+    .add-form input, .add-form select {
+        width: 100%;
+    }
+}

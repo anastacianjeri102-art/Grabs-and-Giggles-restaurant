@@ -1,0 +1,38 @@
+.receipt-container {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+.receipt-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.receipt-header {
+    text-align: center;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.receipt-header i { font-size: 2.5rem; color: #ff8c42; }
+.receipt-info {
+    background: #f8fafc;
+    padding: 0.8rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+}
+.receipt-table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+.receipt-table th, .receipt-table td { padding: 0.5rem; border-bottom: 1px solid #eee; text-align: left; }
+.total-row td { border-top: 2px solid #333; font-weight: bold; }
+.receipt-footer { text-align: center; padding-top: 1rem; border-top: 2px dashed #ddd; margin-top: 1rem; }
+.payment-actions { display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; }
+.btn { padding: 0.6rem 1.2rem; border-radius: 10px; cursor: pointer; font-weight: 600; border: none; }
+.btn-cash { background: #27ae60; color: white; }
+.btn-mpesa { background: #7e57ff; color: white; }
+.btn-card { background: #3498db; color: white; }
+.btn-print { background: #2c3e50; color: white; }
+@media (max-width: 600px) { .payment-actions { flex-direction: column; } .btn { width: 100%; } }
+@media print { .payment-actions { display: none; } }
