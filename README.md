@@ -1,1 +1,1 @@
-[Click here to view my Live Website](http://infinityfreeapp.com)
+http://infinityfree.me
